@@ -9,7 +9,6 @@ C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\n
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\E-LearningApp.csproj.CoreCompileInputs.cache
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\E-LearningApp.RazorAssemblyInfo.cache
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\E-LearningApp.RazorAssemblyInfo.cs
-C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\E-LearningApp.AssemblyInfoInputs.cache
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\E-LearningApp.AssemblyInfo.cs
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\E-LearningApp.TagHelpers.input.cache
@@ -33,3 +32,5 @@ C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\n
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\E-LearningApp.dll
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\E-LearningApp.pdb
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\E-LearningApp.csproj.CopyComplete
+C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_NavbarPartial.g.cshtml.cs
