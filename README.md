@@ -1,1 +1,1 @@
-RAF Students ASP.NET Core application
+Students application ASP.NET Core, Računarski fakultet
