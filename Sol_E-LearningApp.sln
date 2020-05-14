@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1082
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-LearningApp", "E-LearningApp\E-LearningApp.csproj", "{A755D83F-84BE-4E0C-A534-E2B64826B4EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-LearningApp", "E-LearningApp\E-LearningApp.csproj", "{A755D83F-84BE-4E0C-A534-E2B64826B4EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E_LearningMongoAPI", "E_LearningMongoAPI\E_LearningMongoAPI.csproj", "{6ABDD037-1831-4DF7-B474-90E38F13F13C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A755D83F-84BE-4E0C-A534-E2B64826B4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A755D83F-84BE-4E0C-A534-E2B64826B4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A755D83F-84BE-4E0C-A534-E2B64826B4EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ABDD037-1831-4DF7-B474-90E38F13F13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ABDD037-1831-4DF7-B474-90E38F13F13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ABDD037-1831-4DF7-B474-90E38F13F13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ABDD037-1831-4DF7-B474-90E38F13F13C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
