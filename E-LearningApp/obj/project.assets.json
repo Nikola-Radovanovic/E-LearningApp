@@ -2759,21 +2759,6 @@
           }
         }
       },
-      "mongocsharpdriver/2.10.4": {
-        "type": "package",
-        "dependencies": {
-          "MongoDB.Bson": "2.10.4",
-          "MongoDB.Driver": "2.10.4",
-          "MongoDB.Driver.Core": "2.10.4",
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/netstandard1.5/MongoDB.Driver.Legacy.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.5/MongoDB.Driver.Legacy.dll": {}
-        }
-      },
       "MongoDB.Bson/2.10.4": {
         "type": "package",
         "dependencies": {
@@ -5021,6 +5006,22 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "E-LearningAppMongoDbAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.1.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
+          "MongoDB.Bson": "2.10.4",
+          "MongoDB.Driver": "2.10.4"
+        },
+        "compile": {
+          "bin/placeholder/E-LearningAppMongoDbAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-LearningAppMongoDbAPI.dll": {}
         }
       }
     }
@@ -7986,22 +7987,6 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "mongocsharpdriver/2.10.4": {
-      "sha512": "c3C7SJuN7PpX6zyKiP5QFwyPwFQb13BI3WMIJdmPpv47PyE4HiqTPZ+l4au5C11EeCKLwgY2wTJZCNHIDxcdTA==",
-      "type": "package",
-      "path": "mongocsharpdriver/2.10.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "License.txt",
-        "lib/net452/MongoDB.Driver.Legacy.dll",
-        "lib/net452/MongoDB.Driver.Legacy.xml",
-        "lib/netstandard1.5/MongoDB.Driver.Legacy.dll",
-        "lib/netstandard1.5/MongoDB.Driver.Legacy.xml",
-        "mongocsharpdriver.2.10.4.nupkg.sha512",
-        "mongocsharpdriver.nuspec"
       ]
     },
     "MongoDB.Bson/2.10.4": {
@@ -13581,15 +13566,20 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "E-LearningAppMongoDbAPI/1.0.0": {
+      "type": "project",
+      "path": "../E-LearningAppMongoDbAPI/E-LearningAppMongoDbAPI.csproj",
+      "msbuildProject": "../E-LearningAppMongoDbAPI/E-LearningAppMongoDbAPI.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "E-LearningAppMongoDbAPI >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9",
-      "mongocsharpdriver >= 2.10.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9"
     ]
   },
   "packageFolders": {
@@ -13621,7 +13611,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Johny\\Desktop\\RWAS\\Domaci\\2\\Sol_E-LearningApp\\E-LearningAppMongoDbAPI\\E-LearningAppMongoDbAPI.csproj": {
+              "projectPath": "C:\\Users\\Johny\\Desktop\\RWAS\\Domaci\\2\\Sol_E-LearningApp\\E-LearningAppMongoDbAPI\\E-LearningAppMongoDbAPI.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -13652,10 +13646,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.1.9, )"
-          },
-          "mongocsharpdriver": {
-            "target": "Package",
-            "version": "[2.10.4, )"
           }
         },
         "imports": [

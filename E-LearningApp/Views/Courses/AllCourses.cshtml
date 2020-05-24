@@ -1,0 +1,30 @@
+﻿@model IEnumerable<E_LearningApp.Models.Course>
+@{
+    ViewData["Title"] = "AllCourses";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Courses</h2>
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr class="bg-success">
+                    <th>Name</th>
+                    <th>Link</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model)
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        <td>@c.Link</td>
+                        <td>@c.Category</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

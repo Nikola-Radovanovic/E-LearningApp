@@ -57,12 +57,13 @@ namespace E_LearningApp
                 app.UseHsts();
             }
 
+            app.UseStatusCodePages(); //dodato
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
             app.UseAuthentication();
-
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

@@ -1,0 +1,32 @@
+﻿@model E_LearningApp.ViewModels.SchoolsViewModel
+@{
+    ViewData["Title"] = "AllSchools";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Schools</h2>
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Skola</th>
+                    <th>Kurs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @foreach (var s in Model.Schools)
+                    {
+                        <td>@s.Name</td>
+                    }
+                    @foreach (var c in Model.Courses)
+                    {
+                        <td>@c.Name</td>
+                    }
+                </tr>                
+            </tbody>
+        </table>
+    </div>
+</div>
+

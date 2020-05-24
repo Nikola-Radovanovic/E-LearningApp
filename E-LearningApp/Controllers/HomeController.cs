@@ -5,9 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using E_LearningApp.Models;
+using System.Net.Http;
+using Newtonsoft.Json;
 
 namespace E_LearningApp.Controllers
 {
+    //localhost:51902/api/Users
+
     public class HomeController : Controller
     {
         public IActionResult Index()
