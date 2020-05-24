@@ -10,8 +10,6 @@ using Newtonsoft.Json;
 
 namespace E_LearningApp.Controllers
 {
-    //localhost:51902/api/Users
-
     public class HomeController : Controller
     {
         public IActionResult Index()

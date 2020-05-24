@@ -15,23 +15,22 @@ namespace E_LearningApp.Controllers
         [HttpGet]
         public async Task<IActionResult> AllSchools()
         {
-            //var viewModel = new SchoolsViewModel()
-            //{
-            //    Schools = new List<School>(),
-            //    Courses = new List<Course>()
-            //};
-            var schools = new List<School>();
+            SchoolsViewModel viewModel = new SchoolsViewModel
+            {
+                Schools = new List<School>(),
+                Courses = new List<Course>()
+            };
 
             using (var httpClient = new HttpClient())
             {
                 using (var response = await httpClient.GetAsync("https://localhost:44367/api/Schools"))
                 {
                     var apiResponse = await response.Content.ReadAsStringAsync();
-                    schools = JsonConvert.DeserializeObject<List<School>>(apiResponse);
+                    viewModel = JsonConvert.DeserializeObject<SchoolsViewModel>(apiResponse);
                 }
             }
 
-            return Json(schools);
+            return RedirectToAction();
         }
     }
 }
