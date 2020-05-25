@@ -12,3 +12,17 @@ C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningAppMongoDbAPI\o
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningAppMongoDbAPI\bin\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.pdb
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.dll
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.pdb
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\bin\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.deps.json
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\bin\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.runtimeconfig.json
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\bin\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.runtimeconfig.dev.json
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\bin\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.dll
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\bin\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.pdb
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.csprojAssemblyReference.cache
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.csproj.CoreCompileInputs.cache
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.RazorAssemblyInfo.cache
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.RazorAssemblyInfo.cs
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.AssemblyInfoInputs.cache
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.AssemblyInfo.cs
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.dll
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningAppMongoDbAPI\obj\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.pdb
