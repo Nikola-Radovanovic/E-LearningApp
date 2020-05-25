@@ -17,7 +17,6 @@ C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\n
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
-C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
@@ -80,3 +79,4 @@ C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\bin\Debug\netcoreapp2.1\E-Le
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\bin\Debug\netcoreapp2.1\E-LearningAppMongoDbAPI.pdb
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\AllCourses.g.cshtml.cs
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Schools\AllSchools.g.cshtml.cs
+C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs

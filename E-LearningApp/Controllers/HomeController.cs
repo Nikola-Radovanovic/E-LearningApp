@@ -12,9 +12,21 @@ namespace E_LearningApp.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        [HttpGet]
+        public async Task<IActionResult> Index()
         {
-            return View();
+            List<User> usersList = new List<User>();
+
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:44367/api/Users"))
+                {
+                    var apiResponse = await response.Content.ReadAsStringAsync();
+                    usersList = JsonConvert.DeserializeObject<List<User>>(apiResponse);
+                }
+            }
+
+            return View(usersList);
         }
 
         public IActionResult About()

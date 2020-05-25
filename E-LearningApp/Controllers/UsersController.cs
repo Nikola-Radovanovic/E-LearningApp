@@ -25,7 +25,7 @@ namespace E_LearningApp.Controllers
                 }
             }
 
-            return View(usersList);
+            return View("Index", usersList);
         }
     }
 }

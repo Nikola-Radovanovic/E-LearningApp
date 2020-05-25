@@ -1,4 +1,4 @@
-﻿@model E_LearningApp.Models.User
+﻿@model IEnumerable<E_LearningApp.Models.User>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -10,20 +10,19 @@
         <table class="table table-bordered">
             <thead>
                 <tr class="bg-success">
-                    <th>Email</th>
-                    
+                    <th>Users</th>
+
                 </tr>
             </thead>
             <tbody>
-               @*foreach (var c in Model)
-                {*@
+                @foreach (var user in Model)
+                {
                     <tr>
-                        <td>Email </td>
-                        
+                        <td>@user.Email</td>
                     </tr>
-                @*}*@
-
+                }
             </tbody>
         </table>
     </div>
 </div>
+
