@@ -4,25 +4,28 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>All Courses</h2>
+<h2>Kursevi</h2>
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-11">
         <table class="table table-bordered">
             <thead>
-                <tr class="bg-success">
-                    <th>Name</th>
-                    <th>Link</th>
+                <tr class="bg-primary">
+                    <th>Naziv kursa</th>
+                    <th>Link kursa</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var c in Model)
+                @foreach (var course in Model)
                 {
                     <tr>
-                        <td>@c.Name</td>
-                        <td>@c.Link</td>
+                        <td>@course.Name</td>
+                        <td>@course.Link</td>
                     </tr>
                 }
             </tbody>
         </table>
+    </div>
+    <div class="col-lg-1">
+        <button asp-action="CreateCourse" class="btn btn-primary">Dodaj kurs</button>
     </div>
 </div>

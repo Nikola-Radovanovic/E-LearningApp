@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
 using E_LearningApp.Models;
 using Newtonsoft.Json;
-using E_LearningApp.ViewModels;
 
 namespace E_LearningApp.Controllers
 {
@@ -15,24 +15,18 @@ namespace E_LearningApp.Controllers
         [HttpGet]
         public async Task<IActionResult> AllSchools()
         {
-            SchoolsViewModel viewModel = new SchoolsViewModel
-            {
-                Schools = new School(),
-                Courses = new Course()
-            };
+            List<School> schoolsList = new List<School>();
 
             using (var httpClient = new HttpClient())
             {
                 using (var response = await httpClient.GetAsync("https://localhost:44367/api/Schools"))
                 {
                     var apiResponse = await response.Content.ReadAsStringAsync();
-                    viewModel = JsonConvert.DeserializeObject<SchoolsViewModel>(apiResponse);
+                    schoolsList = JsonConvert.DeserializeObject<List<School>>(apiResponse);
                 }
             }
 
-            //create return View("Schools", viewModel);
-
-            return RedirectToAction();
+            return View(schoolsList);
         }
     }
 }
