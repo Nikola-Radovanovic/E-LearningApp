@@ -17,8 +17,8 @@ namespace E_LearningApp.Controllers
         {
             SchoolsViewModel viewModel = new SchoolsViewModel
             {
-                Schools = new List<School>(),
-                Courses = new List<Course>()
+                Schools = new School(),
+                Courses = new Course()
             };
 
             using (var httpClient = new HttpClient())
@@ -29,6 +29,8 @@ namespace E_LearningApp.Controllers
                     viewModel = JsonConvert.DeserializeObject<SchoolsViewModel>(apiResponse);
                 }
             }
+
+            //create return View("Schools", viewModel);
 
             return RedirectToAction();
         }

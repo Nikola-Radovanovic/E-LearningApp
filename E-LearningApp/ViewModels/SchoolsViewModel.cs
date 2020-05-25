@@ -8,7 +8,7 @@ namespace E_LearningApp.ViewModels
 {
     public class SchoolsViewModel
     {
-        public List<School> Schools { get; set; }
-        public List<Course> Courses { get; set; }
+        public School Schools { get; set; }
+        public Course Courses { get; set; }
     }
 }

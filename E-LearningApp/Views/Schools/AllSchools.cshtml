@@ -16,13 +16,13 @@
             </thead>
             <tbody>
                 <tr>
-                    @foreach (var s in Model.Schools)
+                    @foreach (var s in Model.Schools.Name)
                     {
-                        <td>@s.Name</td>
+                        <td>@s</td>
                     }
-                    @foreach (var c in Model.Courses)
+                    @foreach (var c in Model.Courses.Name)
                     {
-                        <td>@c.Name</td>
+                        <td>@c</td>
                     }
                 </tr>                
             </tbody>

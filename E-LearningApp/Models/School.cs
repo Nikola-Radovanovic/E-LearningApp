@@ -10,5 +10,7 @@ namespace E_LearningApp.Models
         public string Id { get; set; }
 
         public string Name { get; set; }
+
+        //public string [] Courses { get; set; }
     }
 }
