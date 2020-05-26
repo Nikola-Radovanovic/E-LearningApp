@@ -7,6 +7,7 @@ using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
 using E_LearningApp.Models;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace E_LearningApp.Controllers
 {
@@ -27,6 +28,31 @@ namespace E_LearningApp.Controllers
             }
 
             return View(schoolsList);
+        }
+        // CREATE Course
+        public ViewResult CreateSchool() => View();
+        [HttpPost]
+        public async Task<IActionResult> CreateSchool(School school)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
+            School returnedSchool = new School();
+
+            using (var httpClient = new HttpClient())
+            {
+                StringContent content = new StringContent(JsonConvert.SerializeObject(school),Encoding.UTF8, "application/json");
+
+                using (var response = await httpClient.PostAsync("https://localhost:44367/api/Schools", content))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    returnedSchool = JsonConvert.DeserializeObject<School>(apiResponse);
+                }
+            }
+
+            return View(returnedSchool);
         }
     }
 }

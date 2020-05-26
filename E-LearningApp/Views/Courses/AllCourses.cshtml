@@ -12,14 +12,19 @@
                 <tr class="bg-primary">
                     <th>Naziv kursa</th>
                     <th>Link kursa</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var course in Model)
                 {
                     <tr>
-                        <td>@course.Name</td>
+                        <td>@Html.ActionLink(course.Name, "GetCourse", "Courses")</td>
                         <td>@course.Link</td>
+                        <td>
+                            @Html.ActionLink("Update", "UpdateCourse", "Courses", new { id = course.Id })
+                            @Html.ActionLink("Delete", "DeleteCourse", "Courses", new { id = course.Id })   
+                        </td>
                     </tr>
                 }
             </tbody>
