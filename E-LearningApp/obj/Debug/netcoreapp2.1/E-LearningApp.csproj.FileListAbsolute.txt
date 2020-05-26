@@ -83,3 +83,5 @@ C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\n
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\CreateCourse.g.cshtml.cs
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Schools\CreateSchool.g.cshtml.cs
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\UpdateCourse.g.cshtml.cs
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\DeleteCourse.g.cshtml.cs

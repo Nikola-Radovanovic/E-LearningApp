@@ -39,6 +39,9 @@ namespace E_LearningAppMongoDbAPI.Services
             _courses.ReplaceOne(c => c.Id == id, course);
 
         //DELETE
+        public void Remove(Course courseIn) =>
+            _courses.DeleteOne(c => c.Id == courseIn.Id);
+
         public void Remove(string id) =>
             _courses.DeleteOne(c => c.Id == id);
     }
