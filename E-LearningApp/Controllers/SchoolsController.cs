@@ -29,7 +29,9 @@ namespace E_LearningApp.Controllers
 
             return View(schoolsList);
         }
-        // CREATE Course
+
+
+        // CREATE School
         public ViewResult CreateSchool() => View();
         [HttpPost]
         public async Task<IActionResult> CreateSchool(School school)
@@ -51,8 +53,47 @@ namespace E_LearningApp.Controllers
                     returnedSchool = JsonConvert.DeserializeObject<School>(apiResponse);
                 }
             }
-
             return View(returnedSchool);
+        }
+
+
+        //UPDATE School
+        public async Task<IActionResult> UpdateSchool(string id)
+        {
+            School school = new School();
+
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:44367/api/Schools/" + id))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    school = JsonConvert.DeserializeObject<School>(apiResponse);
+                }
+            }
+            return View(school);
+        }
+        [HttpPut]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateSchool(School school)
+        {
+            School returnedSchool = new School();
+
+            using (var httpClient = new HttpClient())
+            {
+                var content = new MultipartFormDataContent
+                {
+                    { new StringContent(school.Id.ToString()), "Id" },
+                    { new StringContent(school.Name), "Name" }
+                };
+
+                using (var response = await httpClient.PutAsync("https://localhost:44367/api/Schools/", content))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    //ViewBag.Result = "Uspesno ste izmenili informacije o školi";
+                    returnedSchool = JsonConvert.DeserializeObject<School>(apiResponse);
+                }
+            }
+            return View("AllSchools", returnedSchool);
         }
     }
 }

@@ -18,7 +18,8 @@
                 @foreach (var school in Model)
                 {
                     <tr>
-                        <td>@school.Name</td>
+                        <td>@Html.ActionLink(school.Name, "UpdateSchool", "Schools", new { id = school.Id })</td>
+                        <td>Kurs</td>
                     </tr>
                 }
             </tbody>

@@ -73,7 +73,7 @@ using E_LearningApp;
             ");
             EndContext();
             BeginContext(475, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "180e1324530745a5857f599bf201b6c4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "273c5c4fb13e407594f28cb4d8ad1754", async() => {
                 BeginContext(552, 13, true);
                 WriteLiteral("E-LearningApp");
                 EndContext();
@@ -100,7 +100,7 @@ using E_LearningApp;
             WriteLiteral("\r\n        </div>\r\n        <div class=\"navbar-collapse collapse\">\r\n            <ul class=\"nav navbar-nav\">\r\n                <li>");
             EndContext();
             BeginContext(696, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "94663d86cd34436993bafeb03e2c234c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c37099ec26034ba38252525b93d9235f", async() => {
                 BeginContext(760, 7, true);
                 WriteLiteral("Kursevi");
                 EndContext();
@@ -126,7 +126,7 @@ using E_LearningApp;
             WriteLiteral("</li>\r\n                <li>");
             EndContext();
             BeginContext(798, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce9fb9a566c449ae91fa56df0619ccfd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c420399cd68e46e5afb75c2f6c6de942", async() => {
                 BeginContext(862, 5, true);
                 WriteLiteral("Škole");
                 EndContext();
@@ -152,7 +152,7 @@ using E_LearningApp;
             WriteLiteral("</li>\r\n                <li>");
             EndContext();
             BeginContext(898, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c7336fe53854b2eb498c9b8410f085c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7fc517cb9ae42168aa17ea5c67cb61b", async() => {
                 BeginContext(956, 18, true);
                 WriteLiteral("Vodič kroz kurseve");
                 EndContext();
@@ -178,7 +178,7 @@ using E_LearningApp;
             WriteLiteral("</li>\r\n            </ul>\r\n            ");
             EndContext();
             BeginContext(1016, 32, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a94d6de75c9c4ec1b094d99da35f6448", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b64011ffd9074c0cb0c7c509aea8953a", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
