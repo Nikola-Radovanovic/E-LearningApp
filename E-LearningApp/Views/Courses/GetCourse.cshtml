@@ -1,0 +1,21 @@
+﻿@model E_LearningApp.Models.Course
+@{
+    ViewData["Title"] = "GetCourse";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.HiddenFor(c => c.Id)
+<h2>@Html.DisplayFor(c => c.Name)</h2>
+
+<div class="row">
+    <div class="col-lg-12">
+        @Html.DisplayNameFor(c => c.Description)
+        @Html.DisplayFor(c => c.Description)
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        @Html.DisplayNameFor(c => c.Link)
+        @Html.DisplayFor(c => c.Link)
+    </div>
+</div>
+

@@ -19,7 +19,7 @@
                 @foreach (var course in Model)
                 {
                     <tr>
-                        <td>@Html.ActionLink(course.Name, "GetCourse", "Courses")</td>
+                        <td>@Html.ActionLink(course.Name, "GetCourse", "Courses", new { id = course.Id })</td>
                         <td>@course.Link</td>
                         <td>
                             @Html.ActionLink("Update", "UpdateCourse", "Courses", new { id = course.Id })

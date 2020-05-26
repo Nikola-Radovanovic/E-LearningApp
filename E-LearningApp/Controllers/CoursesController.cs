@@ -30,6 +30,23 @@ namespace E_LearningApp.Controllers
             return View(coursesList);
         }
 
+        public ViewResult GetCourse() => View();
+        [HttpGet]
+        public async Task<IActionResult> GetCourse(string id)
+        {
+            Course course = new Course();
+
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:44367/api/Courses/" + id))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    course = JsonConvert.DeserializeObject<Course>(apiResponse);
+                }
+            }
+            return View(course);
+        }
+
         // CREATE Course
         public ViewResult CreateCourse() => View();
         [HttpPost]

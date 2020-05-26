@@ -18,5 +18,8 @@ namespace E_LearningAppMongoDbAPI.Models
 
         [BsonElement("Link")]
         public string Link { get; set; }
+
+        [BsonElement("Description")]
+        public string Description { get; set; }
     }
 }
