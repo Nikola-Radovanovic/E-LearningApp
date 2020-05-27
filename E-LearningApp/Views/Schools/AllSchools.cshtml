@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<E_LearningApp.Models.School>
 @{
     ViewData["Title"] = "AllSchools";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_DataTablesPartial.cshtml";
 }
 
 <h2>Škole</h2>
 <div class="row">
     <div class="col-lg-12">
-        <table class="table table-bordered">
+        <table id="schools" class="table table-bordered">
             <thead>
                 <tr class="bg-primary">
                     <th>Naziv škole</th>
@@ -29,4 +29,10 @@
         <a asp-action="CreateSchool" class="btn btn-primary">Dodaj školu</a>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $('#schools').DataTable();
+    });
+</script>
 
