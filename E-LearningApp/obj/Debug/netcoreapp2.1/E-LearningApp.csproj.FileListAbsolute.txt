@@ -90,3 +90,4 @@ C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\n
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\UpdateCourse.g.cshtml.cs
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\GetCourse.g.cshtml.cs
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Schools\UpdateSchool.g.cshtml.cs
+C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_DataTablesPartial.g.cshtml.cs
