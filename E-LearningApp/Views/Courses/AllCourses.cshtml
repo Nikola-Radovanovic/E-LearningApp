@@ -4,40 +4,66 @@
     Layout = "~/Views/Shared/_DataTablesPartial.cshtml";
 }
 
-<h2>Kursevi</h2>
-<div class="row">
-    <div class="col-lg-11">
-        <table id="courses" class="table table-striped table-bordered" style="width:100%">
-            <thead>
-                <tr class="bg-primary">
-                    <th>Naziv kursa</th>
-                    <th>Link kursa</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var course in Model)
-                {
-                    <tr>
-                        <td>@Html.ActionLink(course.Name, "GetCourse", "Courses", new { id = course.Id })</td>
-                        <td>@course.Link</td>
-                        <td>
-                            @Html.ActionLink("Update", "UpdateCourse", "Courses", new { id = course.Id })
-                            @Html.ActionLink("Delete", "DeleteCourse", "Courses", new { id = course.Id })
-                        </td>
+@if (!Model.Any())
+{
+    <h2>Trenutno nemamo kurseva u bazi.</h2>
+}
+else
+{
+    <h2>Kursevi</h2>
+    <div class="row">
+        <div class="col-lg-11">
+            <table id="courses" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr class="bg-primary">
+                        <th>Naziv kursa</th>
+                        <th>Link kursa</th>
+                        <th></th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var course in Model)
+                    {
+                        <tr>
+                            <td>@Html.ActionLink(course.Name, "GetCourse", "Courses", new { id = course.Id })</td>
+                            <td>@course.Link</td>
+                            <td>
+                                <button class="btn btn-primary">Update</button>
+                                <button data-course-id="@course.Id" class="btn btn-danger js-delete">Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-1">
+            <a asp-action="CreateCourse" class="btn btn-primary">Dodaj kurs</a>
+        </div>
     </div>
-    <div class="col-lg-1">
-        <a asp-action="CreateCourse" class="btn btn-primary">Dodaj kurs</a>
-    </div>
-</div>
+}
 
-<script>
+<script type="text/javascript">
     $(document).ready(function () {
         $('#courses').DataTable();
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#courses").on("click", ".js-delete", function () {
+            var button = $(this)
+            
+            confirm("Da li ste sigurni da želite obrisati kurs?", function (result) {
+                if (result) {
+                    $.ajax({
+                        url: "/Courses/GetCourse/" + button.attr("data-course-id"),
+                        method: "DELETE",
+                        success: function () {
+                            button.parents("tr").remove();
+                        }
+                    });
+                } 
+            })
+        });
     });
 </script>
 

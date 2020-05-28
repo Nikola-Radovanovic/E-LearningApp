@@ -79,7 +79,6 @@ C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\bin\Debug\netcoreapp2.1\E-Le
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\AllCourses.g.cshtml.cs
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Schools\AllSchools.g.cshtml.cs
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\CreateCourse.g.cshtml.cs
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\CreateCourse.g.cshtml.cs
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Schools\CreateSchool.g.cshtml.cs
@@ -92,3 +91,5 @@ C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razo
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Schools\UpdateSchool.g.cshtml.cs
 C:\Users\Milica\Desktop\E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_DataTablesPartial.g.cshtml.cs
 C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_DataTablesPartial.g.cshtml.cs
+C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\CreateCourse.g.cshtml.cs
+C:\Users\Johny\Desktop\RWAS\Domaci\2\Sol_E-LearningApp\E-LearningApp\obj\Debug\netcoreapp2.1\Razor\Views\Courses\DeleteCourse.g.cshtml.cs

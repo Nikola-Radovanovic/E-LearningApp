@@ -23,8 +23,9 @@
                 @Html.LabelFor(c => c.Description)
                 @Html.TextBoxFor(c => c.Description, new { @class = "form-control" })
             </div>
-          
-            <button type="submit" class="btn btn-primary">Sačuvaj</button>
+            @Html.HiddenFor(c => c.Id)
+            @Html.AntiForgeryToken()
+            <input type="submit" class="btn btn-primary" value="Sačuvaj">
         }
     </div>
 </div>

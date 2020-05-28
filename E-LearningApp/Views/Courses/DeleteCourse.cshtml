@@ -1,0 +1,12 @@
+﻿@model E_LearningApp.Models.Course
+@{
+    ViewData["Title"] = "DeleteCourse";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("DeleteCourse", "Courses"))
+{
+    @Html.HiddenFor(c => c.Id)
+    <input class="btn btn-danger" />
+}
+

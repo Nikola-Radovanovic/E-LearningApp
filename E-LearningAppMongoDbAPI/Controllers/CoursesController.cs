@@ -46,7 +46,7 @@ namespace E_LearningAppMongoDbAPI.Controllers
         }
 
         [HttpPut("{id:length(24)}")]
-        public IActionResult Update(string id, Course course)
+        public IActionResult Update([FromForm] string id, Course course)
         {
             var updateCourse = _courseService.Get(id);
 

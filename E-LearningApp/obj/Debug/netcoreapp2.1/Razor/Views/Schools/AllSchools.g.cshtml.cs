@@ -101,7 +101,7 @@ using E_LearningApp;
             WriteLiteral("            </tbody>\r\n        </table>\r\n    </div>\r\n    <div class=\"col-lg-1\">\r\n        ");
             EndContext();
             BeginContext(871, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b8f76bbb4204d69a428b970f0e1adba", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86d341d21a5349e9bf6fa1722f4db191", async() => {
                 BeginContext(924, 11, true);
                 WriteLiteral("Dodaj školu");
                 EndContext();

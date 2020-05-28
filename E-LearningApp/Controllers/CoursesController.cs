@@ -50,6 +50,7 @@ namespace E_LearningApp.Controllers
         // CREATE Course
         public ViewResult CreateCourse() => View();
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateCourse(Course course)
         {
             if (!ModelState.IsValid)
@@ -69,7 +70,7 @@ namespace E_LearningApp.Controllers
                     returnedCourse = JsonConvert.DeserializeObject<Course>(apiResponse);
                 }
             }
-            return View(returnedCourse);
+            return RedirectToAction("AllCourses", "Courses", returnedCourse);
         }
 
 
@@ -88,28 +89,30 @@ namespace E_LearningApp.Controllers
             }
             return View(course);
         }
+
         [HttpPut]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateCourse(Course course)
         {
             Course returnedCourse = new Course();
+
             using (var httpClient = new HttpClient())
             {
                 var content = new MultipartFormDataContent
                 {
                     { new StringContent(course.Id.ToString()), "Id" },
                     { new StringContent(course.Name), "Name" },
-                    { new StringContent(course.Link), "Link" }
+                    { new StringContent(course.Link), "Link" },
+                    { new StringContent(course.Description), "Description" }
                 };
 
                 using (var response = await httpClient.PutAsync("https://localhost:44367/api/Courses/", content))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    ViewBag.Result = "Uspesno ste izmenili korisnika";
                     returnedCourse = JsonConvert.DeserializeObject<Course>(apiResponse);
                 }
             }
-            return RedirectToAction("AllCourses", returnedCourse);
+            return RedirectToAction("AllCourses", "Courses", returnedCourse);
         }
 
 
@@ -161,7 +164,7 @@ namespace E_LearningApp.Controllers
                     string apiResponse = await response.Content.ReadAsStringAsync();
                 }
             }
-            return NoContent();
+            return RedirectToAction("AllCourses", "Courses");
         }
     }
 }
